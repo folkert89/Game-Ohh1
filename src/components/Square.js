@@ -6,10 +6,10 @@ export class Square extends PureComponent {
   static PropTypes = {
     value: PropTypes.number.isRequired
   }
-  
+
   render() {
     return (
-      <div className="Square" value={this.props.value}>
+      <div className={`Square fill-${this.props.value || 0}`}>
       </div>
     )
   }
