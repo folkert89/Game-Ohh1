@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Board from './containers/Board'
+import CreateGameButton from './components/CreateGameButton'
 import Progress from './components/playerProgress'
 import './App.css';
 
@@ -20,6 +21,7 @@ class App extends Component {
             <li>The game is finished when all squares have a value 1 or 2 and all the other rules are met.</li>
           </ul>
         </div>
+        <CreateGameButton />
 
         <Progress />
 
